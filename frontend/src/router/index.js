@@ -1,15 +1,25 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import HelloWorld from '@/components/HelloWorld';
+//index.js
+import { createRouter, createWebHistory } from 'vue-router';
+import Home from '@/components/HomePage/Home.vue';
+import Login from '@/components/LoginPage/Login.vue';
 
-Vue.use(Router);
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/Login',
+    name: 'Login',
+    component: Login
+  }
+];
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
-});
+const router = createRouter({
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes
+  });
+  
+
+export default router;

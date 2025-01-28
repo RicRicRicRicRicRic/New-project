@@ -1,15 +1,16 @@
+<!-- App.vue -->
 <template>
-  <router-view/>
-
+  <div>
+    <router-view/>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'App'
 }
-
 </script>
 
-<style>
+<style scoped>
 
 </style>
