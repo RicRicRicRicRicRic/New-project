@@ -1,16 +1,16 @@
-<!-- Home.vue -->
+<!-- Login.vue -->
 <script>
 export default {
   name: 'Login',
   mounted() {
-    document.title = 'Login and Registration'; // Dynamically set the title
+    document.title = 'Login'; 
   }
 };
 </script>
 
 <template>
   <div>
-    <h1>This page is where we login and register!</h1>
+    <h1>This page is where we login!</h1>
   </div>
 </template>
 
