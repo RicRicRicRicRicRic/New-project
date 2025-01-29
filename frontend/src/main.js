@@ -5,4 +5,4 @@ import Router from './Router';
 
 createApp(App)
   .use(Router)   
-  .mount('#app'); 
+  .mount('#display'); 
