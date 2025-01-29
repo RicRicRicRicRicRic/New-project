@@ -1,4 +1,8 @@
 <script>
+import New from './New.vue';
+import Foreign from './Foreign.vue';
+import Transfer from './Transfer.vue';
+
     export default {
   name: 'Register',
   mounted() {
