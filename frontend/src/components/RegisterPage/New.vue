@@ -6,7 +6,7 @@
 
 <template>
     <div>
-
+This is new student form
     </div>
 </template>
 

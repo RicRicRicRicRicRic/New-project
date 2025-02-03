@@ -6,7 +6,7 @@
 
 <template>
     <div>
-
+This is foreign student form
     </div>
 </template>
 
