@@ -5,7 +5,7 @@ npm run dev
 
 <!-- Backend -->
 To run backend
-
+php spark serve
 
 <!-- Stop port -->
 To stop running port
