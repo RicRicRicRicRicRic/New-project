@@ -6,8 +6,7 @@ export default {
   data() {
     return {
       studentNumber: '',
-      password: '',
-      errorMessage: ''
+      password: ''
     }
   },
   methods: {
@@ -20,9 +19,9 @@ export default {
         alert(response.data.message);
       } catch (error) {
         if (error.response && error.response.data && error.response.data.error) {
-          this.errorMessage = error.response.data.error;
+          alert(error.response.data.error);
         } else {
-          this.errorMessage = 'An error occurred. Please try again.';
+          alert('An error occurred. Please try again.');
         }
       }
     }
@@ -44,13 +43,9 @@ export default {
       Not a student yet?
       <router-link to="/Register"><span>Click here</span></router-link>
     </p>
-    <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
   </form>
 </template>
 
 <style scoped>
 /* Your component styles here */
-.error {
-  color: red;
-}
 </style>

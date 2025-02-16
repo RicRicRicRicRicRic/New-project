@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/components/HomePage/Home.vue';
 import PageLogin from '@/components/LoginPage/PageLogin.vue';
 import Register from '@/components/RegisterPage/Register.vue';
-import Student from '@/components/StudentPage/Student.vue';
+import PageStudent from '@/components/StudentPage/PageStudent.vue';
 
 const routes = [
   {
@@ -22,9 +22,9 @@ const routes = [
     component: Register
   },
   {
-    path: '/Student',
-    name: 'Student',
-    component: Student
+    path: '/StudentDashboard',
+    name: 'PageStudent',
+    component: PageStudent
   },
 ];
 

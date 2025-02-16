@@ -4,7 +4,7 @@ import Enroll from './Enroll.vue';
 import Subject from './Subjects.vue';
 
 export default {
-  name: 'Student',
+  name: 'PageStudent',
   data() {
     return {
       currentView: 'about', 
