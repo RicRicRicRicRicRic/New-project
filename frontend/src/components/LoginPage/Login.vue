@@ -12,7 +12,7 @@ export default {
   methods: {
     async login() {
       try {
-        const response = await axios.post('http://localhost:3000/login', {
+        const response = await axios.post('http://localhost:3000/api/login', {
           studentNumber: this.studentNumber,
           password: this.password
         });
@@ -47,5 +47,5 @@ export default {
 </template>
 
 <style scoped>
-/* Your component styles here */
+
 </style>
